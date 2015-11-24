@@ -73,6 +73,7 @@
             this.txtHost.Name = "txtHost";
             this.txtHost.Size = new System.Drawing.Size(100, 21);
             this.txtHost.TabIndex = 3;
+            this.txtHost.Text = "120.1.1.1";
             // 
             // txtAuth
             // 
@@ -111,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 473);
+            this.ClientSize = new System.Drawing.Size(265, 165);
             this.Controls.Add(this.txtDBNo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtAuth);

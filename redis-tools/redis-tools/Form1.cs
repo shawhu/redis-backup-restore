@@ -15,7 +15,7 @@ namespace redis_tools
         private void button1_Click(object sender, EventArgs e)
         {
             //Now restore everything back
-            RedisClient client = new RedisClient(txtHost.Text, 6379, txtAuth.Text, int.Parse(txtDBNo.Text));
+            RedisClient client = new RedisClient(txtHost.Text, 6379, txtAuth.Text.Trim(), int.Parse(txtDBNo.Text));
             var reader = new StreamReader("dump.txt");
             int i = 1;
             while (true)
@@ -33,7 +33,7 @@ namespace redis_tools
         private void button2_Click(object sender, EventArgs e)
         {
             // This is to dump everything
-            RedisClient client = new RedisClient(txtHost.Text, 6379, txtAuth.Text, int.Parse(txtDBNo.Text));
+            RedisClient client = new RedisClient(txtHost.Text, 6379, txtAuth.Text.Trim(), int.Parse(txtDBNo.Text));
             var all_keys = client.GetAllKeys();
             var sw = new StreamWriter("dump.txt");
             int i = 1;
