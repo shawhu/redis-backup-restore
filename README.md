@@ -6,5 +6,5 @@ It uses servicestack.redis and you can get it thru nuget.
 
 Future plan,
 
-1) make a progress bar and be able to pause/resume
-2) use one big data file instead of millions of smaller ones.
+1. make a progress bar and be able to pause/resume
+2. use one big data file instead of millions of smaller ones.
